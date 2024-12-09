@@ -16,7 +16,13 @@ class LoginScreen extends StatelessWidget {
         body: Column(
           // mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const CircleWidget(),
+            const CircleWidget(
+              heightc: 70,
+              widthc: 60,
+              rightPosiion: 40,
+              topPosiion: -40,
+              alignment: Alignment.topRight,
+            ),
             const Text(
               'Login',
               style: TextStyle(
@@ -33,14 +39,21 @@ class LoginScreen extends StatelessWidget {
             ),
             const TextButtonWidget(text: 'Or login wih'),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
-          
             const SocialMediaList(),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             const TextButtonWidget(text: 'Don\'t have account? Sign up'),
+            const Spacer(),
+            const CircleWidget(
+              heightc: 120,
+              widthc: 120,
+              topPosiion: 0,
+              rightPosiion: 350,
+              alignment: Alignment.bottomLeft,
+            ),
           ],
         ));
   }
