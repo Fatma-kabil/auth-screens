@@ -1,6 +1,7 @@
 import 'package:auth_flutter_project/constants.dart';
 import 'package:auth_flutter_project/onboard/widgets/button_widget.dart';
 import 'package:auth_flutter_project/onboard/widgets/circle_widget.dart';
+import 'package:auth_flutter_project/onboard/widgets/text_button.dart';
 import 'package:auth_flutter_project/onboard/widgets/text_field.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,18 @@ class LoginScreen extends StatelessWidget {
               height: 20,
             ),
             const ButtonWidget(),
+            const SizedBox(
+              height: 10,
+            ),
+            const TextButtonWidget(text: 'Or login wih'),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(),
+            const SizedBox(
+              height: 10,
+            ),
+            const TextButtonWidget(text: 'Don\'t have account? Sign up'),
           ],
         ));
   }
