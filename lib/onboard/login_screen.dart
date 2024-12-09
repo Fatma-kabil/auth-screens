@@ -1,4 +1,5 @@
 import 'package:auth_flutter_project/constants.dart';
+import 'package:auth_flutter_project/onboard/widgets/button_widget.dart';
 import 'package:auth_flutter_project/onboard/widgets/circle_widget.dart';
 import 'package:auth_flutter_project/onboard/widgets/text_field.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +22,10 @@ class LoginScreen extends StatelessWidget {
             ),
             Image.asset('assets/images/one.jpg'),
             const Text_Field(),
+            const SizedBox(
+              height: 20,
+            ),
+            const ButtonWidget(),
           ],
         ));
   }
