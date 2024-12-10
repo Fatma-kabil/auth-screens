@@ -1,9 +1,10 @@
-import 'package:auth_flutter_project/constants.dart';
+import 'package:auth_flutter_project/onboard/otp_screen.dart';
 import 'package:auth_flutter_project/onboard/widgets/button_widget.dart';
 import 'package:auth_flutter_project/onboard/widgets/circle_widget.dart';
 import 'package:auth_flutter_project/onboard/widgets/social_media_list.dart';
 import 'package:auth_flutter_project/onboard/widgets/text_button.dart';
 import 'package:auth_flutter_project/onboard/widgets/text_field.dart';
+import 'package:auth_flutter_project/onboard/widgets/text_header.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -23,17 +24,22 @@ class LoginScreen extends StatelessWidget {
               topPosiion: -40,
               alignment: Alignment.topRight,
             ),
-            const Text(
-              'Login',
-              style: TextStyle(
-                  fontSize: 30, color: maincolor, fontWeight: FontWeight.bold),
-            ),
+            const TextHeader(text: 'Login',sizeFont: 30,),
+
             Image.asset('assets/images/one.jpg'),
             const Text_Field(),
             const SizedBox(
               height: 20,
             ),
-            const ButtonWidget(),
+            ButtonWidget(
+              ontap: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                   return const OtpScreen();
+                  },
+                ));
+              },
+            ),
             const SizedBox(
               height: 10,
             ),

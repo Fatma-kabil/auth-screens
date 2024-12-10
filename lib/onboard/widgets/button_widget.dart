@@ -2,11 +2,12 @@ import 'package:auth_flutter_project/constants.dart';
 import 'package:flutter/material.dart';
 
 class ButtonWidget extends StatelessWidget {
-  const ButtonWidget({super.key});
-
+ const  ButtonWidget({super.key ,required this.ontap});
+  final void Function()? ontap;
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: ontap,
       child: Container(
         width: width(context) * 0.8,
         height: 50,
