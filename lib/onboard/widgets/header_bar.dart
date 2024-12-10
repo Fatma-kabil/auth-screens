@@ -20,7 +20,7 @@ class HeaderBar extends StatelessWidget {
         const SizedBox(
           width: 20,
         ),
-        const TextHeader(
+        const Textwidget(
           text: "Verfication Screen",
           sizeFont: 20,
         )

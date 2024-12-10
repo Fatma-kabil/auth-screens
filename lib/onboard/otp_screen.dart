@@ -7,14 +7,20 @@ class OtpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding:  EdgeInsets.all(20),
-              child:HeaderBar(),
+            const Padding(
+              padding: EdgeInsets.all(20),
+              child: HeaderBar(),
+            ),
+            Image.asset('assets/images/two.jpg'),
+            const Textwidget(
+              text:
+                  "Enter the 5 digit number sent to\n this number : 01124974377",
+              sizeFont: 20,
             )
           ],
         ),

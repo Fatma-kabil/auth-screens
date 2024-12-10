@@ -24,7 +24,7 @@ class LoginScreen extends StatelessWidget {
               topPosiion: -40,
               alignment: Alignment.topRight,
             ),
-            const TextHeader(text: 'Login',sizeFont: 30,),
+            const Textwidget(text: 'Login',sizeFont: 30,),
 
             Image.asset('assets/images/one.jpg'),
             const Text_Field(),
