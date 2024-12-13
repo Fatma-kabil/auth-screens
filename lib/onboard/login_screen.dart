@@ -4,7 +4,7 @@ import 'package:auth_flutter_project/onboard/widgets/circle_widget.dart';
 import 'package:auth_flutter_project/onboard/widgets/social_media_list.dart';
 import 'package:auth_flutter_project/onboard/widgets/text_button.dart';
 import 'package:auth_flutter_project/onboard/widgets/text_field.dart';
-import 'package:auth_flutter_project/onboard/widgets/text_header.dart';
+import 'package:auth_flutter_project/onboard/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -32,6 +32,7 @@ class LoginScreen extends StatelessWidget {
               height: 20,
             ),
             ButtonWidget(
+              text:  'Login',
               ontap: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {

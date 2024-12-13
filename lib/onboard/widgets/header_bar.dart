@@ -1,4 +1,4 @@
-import 'package:auth_flutter_project/onboard/widgets/text_header.dart';
+import 'package:auth_flutter_project/onboard/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 
 class HeaderBar extends StatelessWidget {
