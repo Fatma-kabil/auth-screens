@@ -1,4 +1,5 @@
 import 'package:auth_flutter_project/constants.dart';
+import 'package:auth_flutter_project/onboard/complete_screen.dart';
 import 'package:auth_flutter_project/onboard/widgets/button_widget.dart';
 import 'package:auth_flutter_project/onboard/widgets/header_bar.dart';
 import 'package:auth_flutter_project/onboard/widgets/text_widget.dart';
@@ -58,7 +59,7 @@ class OtpScreen extends StatelessWidget {
               ontap: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return const OtpScreen();
+                    return const CompleteScreen();
                   },
                 ));
               },
