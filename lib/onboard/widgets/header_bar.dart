@@ -2,7 +2,8 @@ import 'package:auth_flutter_project/onboard/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 
 class HeaderBar extends StatelessWidget {
-  const HeaderBar({super.key});
+  const HeaderBar({super.key, required this.text});
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +21,8 @@ class HeaderBar extends StatelessWidget {
         const SizedBox(
           width: 20,
         ),
-        const Textwidget(
-          text: "Verfication Screen",
+         Textwidget(
+          text:text ,
           sizeFont: 20,
         )
       ],

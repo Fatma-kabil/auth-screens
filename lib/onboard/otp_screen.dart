@@ -1,6 +1,7 @@
 import 'package:auth_flutter_project/constants.dart';
 import 'package:auth_flutter_project/onboard/complete_screen.dart';
 import 'package:auth_flutter_project/onboard/widgets/button_widget.dart';
+import 'package:auth_flutter_project/onboard/widgets/circle_widget.dart';
 import 'package:auth_flutter_project/onboard/widgets/header_bar.dart';
 import 'package:auth_flutter_project/onboard/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,9 @@ class OtpScreen extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.all(20),
-              child: HeaderBar(),
+              child: HeaderBar(
+                text: "Verfication Screen",
+              ),
             ),
             Image.asset('assets/images/two.jpg'),
             const Textwidget(
@@ -53,7 +56,9 @@ class OtpScreen extends StatelessWidget {
                   decoration: TextDecoration.underline,
                   decorationColor: maincolor,
                 )),
-            const    SizedBox(height: 20,),
+            const SizedBox(
+              height: 20,
+            ),
             ButtonWidget(
               text: "Verify",
               ontap: () {
@@ -63,7 +68,15 @@ class OtpScreen extends StatelessWidget {
                   },
                 ));
               },
-            )
+            ),
+            const Spacer(),
+            const CircleWidget(
+              heightc: 120,
+              widthc: 120,
+              topPosiion: 0,
+              rightPosiion: 350,
+              alignment: Alignment.bottomLeft,
+            ),
           ],
         ),
       ),
